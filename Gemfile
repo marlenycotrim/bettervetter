@@ -1,17 +1,23 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.17'
+
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+
+
 gem 'jquery-rails'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg'
 gem 'simple_form'
+gem 'devise'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -23,7 +29,10 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
 end
+
 group :test do
   gem 'minitest-spec-rails'
   gem 'minitest-wscolor'
 end
+
+ gem 'bcrypt-ruby', '~> 3.0.0'

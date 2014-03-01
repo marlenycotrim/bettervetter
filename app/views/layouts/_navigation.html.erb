@@ -1,19 +1,20 @@
-<%# navigation styled for Bootstrap 3.0 %>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
+      <a href="#" class="navbar-brand">BetterVetter</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+      </a>
     </div>
-    <div class="collapse navbar-collapse">
+    <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
+   
+        <ul class="nav navbar-nav">
         <%= render 'layouts/navigation_links' %>
       </ul>
+      </ul>
     </div>
-  </div>
-</nav>
+   </div>
+</div>
